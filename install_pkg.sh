@@ -1,100 +1,235 @@
 #!/bin/bash
-clear
-echo "usage:./install.sh"
-echo ""
-echo "Install All tools in termux in one command using ./install.sh"
-echo ""
-#Made by Goutham
-echo ""
-echo "Installing tools......."
-echo ""
-read -p "Enter your options to access for storage (Y/n)" as
-if [ $as == "Y" ]
-then
-termux-setup-storage
-echo "Enter allow for permission"
-elif [ $as == "n" ]
-then
-echo ""
-else
-echo ""
-fi
-pkg update -y
-pkg upgrade -y
-pkg install tsu -y
-pkg install git -y
-pkg install nano -y
-pkg install python -y
-pkg install python2 -y
-pkg install python3 -y
-pkg install python3-pip -y
-pkg install bash -y
-pkg install curl -y
-pkg install openssl -y
-pkg install ssh -y
-pkg install wget -y
-pkg install php -y
-pkg install ruby -y
-pkg install nmap -y
-pip install termcolor
-pkg install hydra -y
-pkg install wireless-tools -y
+
+echo "Installing Packges..."
+
 pkg install root-repo -y
 pkg install unstable-repo -y
 pkg install x11-repo -y
-pkg install macchanger -y
-pkg install dnsutils -y
-pkg install zip -y
+pkg install apt -y
+pkg install arp-scan -y
+pkg install attr -y
+pkg install bash -y
+pkg install bc -y
+pkg install binutils -y
+pkg install bmon -y
+pkg install byobu -y
+pkg install bzip2 -y
+pkg install c-ares -y
+pkg install ca-certificates -y
+pkg install clang -y
+pkg install cmatrix -y
+pkg install command-not-found -y
+pkg install coreutils -y
+pkg install cronie -y
+pkg install cups -y
+pkg install curl -y
+pkg install dash -y
+pkg install debianutils -y
+pkg install dialog -y
+pkg install diffutils -y
 pkg install dirb -y
+pkg install dnsutils -y
+pkg install dos2unix -y
+pkg install dpkg -y
+pkg install ed -y
+pkg install enscript -y
+pkg install exiftool -y
 pkg install figlet -y
-pkg install toilet -y
+pkg install file -y
+pkg install findutils -y
+pkg install fish -y
+pkg install flex -y
+pkg install fontconfig -y
+pkg install freetype -y
+pkg install game-repo -y
+pkg install gawk -y
+pkg install gdb -y
+pkg install gdbm -y
+pkg install ghostscript -y
+pkg install giflib -y
+pkg install git -y
+pkg install glib -y
+pkg install gnupg -y
+pkg install golang -y
+pkg install gpgv -y
+pkg install grep -y
+pkg install gzip -y
+pkg install hexedit -y
+pkg install hollywood -y
+pkg install hping3 -y
+pkg install html2text -y
+pkg install htop-legacy -y
+pkg install hydra -y
+pkg install imlib2 -y
+pkg install inetutils -y
+pkg install jq -y
+pkg install knockd -y
+pkg install krb5 -y
+pkg install ldns -y
+pkg install leptonica -y
+pkg install less -y
+pkg install libandroid-glob -y
+pkg install libandroid-shmem -y
+pkg install libandroid-support -y
+pkg install libao -y
+pkg install libassuan -y
+pkg install libblocksruntime -y
+pkg install libbsd -y
+pkg install libbz2 -y
+pkg install libc++ -y
+pkg install libcaca -y
+pkg install libcairo -y
+pkg install libcap -y
+pkg install libconfuse -y
+pkg install libcrypt -y
+pkg install libcurl -y
+pkg install libdb -y
+pkg install libdw -y
+pkg install libedit -y
+pkg install libelf -y
+pkg install libevent -y
+pkg install libexpat -y
+pkg install libffi -y
+pkg install libflac -y
+pkg install libgcrypt -y
+pkg install libgd -y
+pkg install libgmp -y
+pkg install libgnutls -y
+pkg install libgpg-error -y
+pkg install libice -y
+pkg install libiconv -y
+pkg install libicu -y
+pkg install libid3tag -y
+pkg install libidn2 -y
+pkg install libidn -y
+pkg install libjpeg-turbo -y
+pkg install libksba -y
+pkg install libllvm -y
+pkg install libltdl -y
+pkg install liblua53 -y
+pkg install liblz4 -y
+pkg install liblzma -y
+pkg install liblzo -y
+pkg install libmad -y
+pkg install libmcrypt -y
+pkg install libmhash -y
+pkg install libmp3lame -y
+pkg install libmpfr -y
+pkg install libnettle -y
+pkg install libnghttp2 -y
+pkg install libnl -y
+pkg install libnpth -y
+pkg install libogg -y
+pkg install libopus -y
+pkg install libpcap -y
+pkg install libpixman -y
+pkg install libpng -y
+pkg install libpopt -y
+pkg install libsm -y
+pkg install libsndfile -y
+pkg install libsoxr -y
+pkg install libsqlite -y
+pkg install libssh2 -y
+pkg install libssh -y
+pkg install libtalloc -y
+pkg install libtiff -y
+pkg install libtirpc -y
+pkg install libtool -y
+pkg install libunistring -y
+pkg install libuuid -y
+pkg install libuv -y
+pkg install libvorbis -y
+pkg install libwebp -y
+pkg install libx11 -y
+pkg install libxau -y
+pkg install libxcb -y
+pkg install libxdmcp -y
+pkg install libxext -y
+pkg install libxml2 -y
+pkg install libxrender -y
+pkg install libxslt -y
+pkg install libxt -y
+pkg install libyaml -y
+pkg install libzip -y
+pkg install littlecms -y
+pkg install lsof -y
+pkg install ltrace -y
+pkg install m4 -y
+pkg install make -y
+pkg install man -y
+pkg install mariadb -y
+pkg install mlocate -y
+pkg install nano -y
+pkg install ncurses-ui-libs -y
+pkg install ncurses-utils -y
+pkg install ncurses -y
+pkg install ndk-sysroot -y
+pkg install net-tools -y
+pkg install netcat -y
+pkg install nmap -y
+pkg install nodejs -y
+pkg install oniguruma -y
+pkg install openjpeg -y
+pkg install openssh -y
+pkg install openssl-tool -y
+pkg install openssl -y
+pkg install opusfile -y
+pkg install patch -y
+pkg install pcre2 -y
+pkg install pcre -y
+pkg install perl -y
+pkg install php -y
+pkg install pinentry -y
+pkg install pkg-config -y
+pkg install poppler -y
+pkg install procps -y
+pkg install psmisc -y
+pkg install pulseaudio -y
+pkg install python2 -y
+pkg install python -y
+pkg install radare2 -y
+pkg install readline -y
+pkg install resolv-conf -y
+pkg install ruby -y
+pkg install samba -y
+pkg install science-repo -y
+pkg install sed -y
+pkg install shc -y
+pkg install sox -y
+pkg install speexdsp -y
+pkg install sqlite -y
+pkg install sqlmap -y
+pkg install sshpass -y
+pkg install steghide -y
+pkg install strace -y
+pkg install tar -y
+pkg install tcl -y
+pkg install tcpdump -y
+pkg install termux-am -y
+pkg install termux-auth -y
+pkg install termux-exec -y
+pkg install termux-keyring -y
+pkg install termux-licenses -y
+pkg install termux-tools -y
+pkg install tesseract -y
 pkg install tmux -y
 pkg install toilet -y
-pkg install file -y
-pkg install find -y
-pkg install samba -y
-pkg install grep -y
-pip install hashid
-pip install scapy
-pkg install find -y
-pkg install file -y
-pkg install mlocate
-pip install wfuzz
-pip install requests
-pkg install openssh -y
-pkg install openssl -y
-pkg install openssl-tool -y
+pkg install tracepath -y
+pkg install tree -y
+pkg install tsu -y
+pkg install ttf-dejavu -y
 pkg install unrar -y
-pkg install gcc -y
-pkg install gdb -y
-pkg install golang -y
-pkg install sqlmap -y
-pip install wafw00f
-pip install sqlmap
-pkg install arp-scan -y
-pkg install hping3 -y
-pkg install strings
-pkg install ltrace -y
-pkg install strace -y
-pkg install shc -y
-pkg install perl -y
-pkg install file -y
-echo "Installing nikto and gobuster"
-go get gobuster; cd go/bin; mv gobuster $PREFIX/bin
-sleep 1
-git clone https://github.com/sullo/nikto -q
-gem install evil-winrm
-pkg install exiftool -y
-pkg install steghide -y
-pkg install hexedit -y
-pkg install radare -y
-gem install zsteg
-wget -q https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/enum4linux.pl; mv enum4linux.pl enum4linux; mv enum4linux $HOME/../usr/bin
-pkg update -y
-pkg upgrade -y
-echo "All tools installed....check it out:"
-echo "Thank you for our script"
+pkg install unzip -y
+pkg install util-linux -y
+pkg install vim-runtime -y
+pkg install vim -y
+pkg install wget -y
+pkg install wireless-tools -y
+pkg install wpa-supplicant -y
+pkg install xz-utils -y
+pkg install zip -y
+pkg install zlib -y
+
 echo ""
-echo "follow me on insta https://instagram.com/go.u_tham" "😁"
-
-
+clear
+echo "All packages installed..."
