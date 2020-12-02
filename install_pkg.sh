@@ -2,4 +2,4 @@
 
 pkg update -y
 pkg upgrade -y
-pkg install gcc -y
+pkg install clang -y
