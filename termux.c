@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Usage: gcc termux.c -o Any_Name
 
 int main(){
 
