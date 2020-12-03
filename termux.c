@@ -180,7 +180,7 @@ system("pkg install nodejs -y");
 system("pkg install oniguruma -y");
 system("pkg install openjpeg -y");
 system("pkg install openssh -y");
-system("pkg install openssl -y");
+system("pkg install openssl-tool -y");
 system("pkg install patch -y");
 system("pkg install pcre2 -y");
 system("pkg install pcre -y");
