@@ -50,7 +50,6 @@ system("pkg install freetype -y");
 system("pkg install game-repo -y");
 system("pkg install gawk -y");
 system("pkg install gdb -y");
-system("pkg install gdbm -y");
 system("pkg install ghostscript -y");
 system("pkg install giflib -y");
 system("pkg install git -y");
